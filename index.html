@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheney Cupboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      re="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/assets/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="/assets/fontawesome/css/solid.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header">
+      <button class="nav-toggle" aria-label="toggle navigation" id="nav-toggle">
+        <span class="hamburger" id="hamburger"></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav__list" id="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Mission</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Assistance</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Donate</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link contact-us-button">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contact us dialog modal -->
+    <dialog class="contact-us-dialog">
+      <form
+        class="footer__form"
+        action="https://formsubmit.co/3b38552324ce9f626ce55305b545b04e"
+        method="POST"
+      >
+        <div class="contact-us-dialog__input">
+          <input type="text" name="name" required placeholder="Name" />
+        </div>
+        <div class="contact-us-dialog__input">
+          <input type="email" name="email" required placeholder="Email" />
+        </div>
+        <div class="contact-us-dialog__input">
+          <input type="text" name="subject" required placeholder="Subject" />
+        </div>
+        <div class="contact-us-dialog__input">
+          <textarea
+            class="footer__form-message-box"
+            name="msg"
+            requirede
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="contact-us-dialog__buttons">
+          <button class="contact-us-close-dialog-button" autofocus>
+            Close
+          </button>
+          <button class="contact-us-submit-dialog-button" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <!-- Introduction -->
+    <section class="intro stationary-hidden" id="home">
+      <h1 class="section__title section__title--intro">
+        <strong>Cheney Cupboard</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Feeding Cheney</p>
+      <img
+        src="img/CheneyCupboardPrimaryLogo.png"
+        alt="Logo"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="my-services stationary-hidden" id="services">
+      <h2 class="section__title section__title--services">Our Mission</h2>
+      <p class="introduction__services">
+        <b>
+          Create a brighter today and a Stronger future fighting the food
+          shortages in Cheney.
+          <br />Together we can make a difference.
+        </b>
+      </p>
+      <div class="services">
+        <!-- / service  -->
+        <div class="service transforming-hidden">
+          <h3>Impacting the community</h3>
+          <p>How donations make a difference</p>
+        </div>
+        <!-- / service  -->
+        <div class="service transforming-hidden">
+          <h3>Outreach</h3>
+          <p>Providing food securities for the Cheney area</p>
+        </div>
+        <!-- / service  -->
+        <div class="service transforming-hidden">
+          <h3>Community Development</h3>
+          <p>Volunteer opportunities, charactor development</p>
+        </div>
+      </div>
+      <a href="#work" class="btn">
+        <video
+          class="services__video-donateToday"
+          src="img/donateToday.mp4"
+          type="mp4"
+          autoplay
+          loop
+        ></video
+      ></a>
+    </section>
+
+    <!-- Information -->
+    <section class="information transforming-hidden" id="our-location">
+      <h2 class="information__title information__title--services">Service</h2>
+      <p class="introduction__services">
+        Are you in need of assistance? Please reach out for more information. Or
+        stop by.
+      </p>
+      <div class="services">
+        <!-- / service  -->
+        <div class="service transforming-hidden">
+          <img
+            src="img/cheney-cupboard-front.jpg"
+            alt="Front of Cheney Cupboard"
+          />
+        </div>
+        <!-- / Google Map  -->
+        <div class="service transforming-hidden">
+          <iframe
+            class="information__google-maps-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10784.02956032782!2d-117.5754937!3d47.4897694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549e38991bf70667%3A0x8b04090acfff89f1!2sCheney%20Cupboard%20-%20Food%20Distribution%20Center!5e0!3m2!1sen!2sus!4v1697565481258!5m2!1sen!2sus"
+            width="400"
+            height="350"
+            style="border: 10"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team members  -->
+    <div class="slider">
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+    </div>
+    <section class="about-me stationary-hidden" id="about">
+      <h2 class="section__title section__title--about">
+        Meet the Cupboard Community
+      </h2>
+      <p class="section__subtitle section__subtitle--about">
+        Locals. Volunteers. Friends.
+      </p>
+      <div class="about-me__body">
+        <p>
+          We are a non profit, whose mission is to remove the food insecurities
+          faced by local residents of Cheney. Even in our modern times, we are
+          faced so much food ineffeciencies that as a nation, our waste has an
+          impact on each others lives in the form of unnoticed hunger.
+          <br />
+          <br />
+          We at Cheney Cupboard are a collectivce of local volunteers, coming
+          together to combat this issue. To provide security. To remove hunger.
+        </p>
+      </div>
+      <img
+        src="img/WaterDroplet.png"
+        alt="Cool pic of Benjamin Smith"
+        class="about-me__img stationary-hidden"
+      />
+    </section>
+    <!-- Partners  -->
+    <section class="my-work transforming-hidden" id="work">
+      <h2 class="section__title section__title-work">Donation Partners</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Partners who have made an impact on Cheney.
+      </p>
+
+      <div class="portfolio">
+        <!-- portfolio item 01  -->
+        <a
+          title="Cheney Faith Center"
+          href="https://www.cheneyfaithcenter.org/"
+          class="portfolio__item transforming-hidden"
+          name="Cheney Faith Center"
+        >
+          <img
+            src="img/CheneyFaithCenter.png"
+            alt="Picture of Cheney Faith Center"
+            class="portfolio__img"
+          />
+        </a>
+        <!-- portfolio item 02  -->
+        <a
+          title="Cheney Faith Center"
+          href="https://www.cheneyfaithcenter.org/"
+          class="portfolio__item transforming-hidden"
+          name="Cheney Faith Center"
+        >
+          <img
+            src="img/CheneyFaithCenter.png"
+            alt="Picture of Cheney Faith Center"
+            class="portfolio__img"
+          />
+        </a>
+        <!-- portfolio item 03  -->
+        <a
+          title="Cheney Faith Center"
+          href="https://www.cheneyfaithcenter.org/"
+          class="portfolio__item transforming-hidden"
+          name="Cheney Faith Center"
+        >
+          <img
+            src="img/CheneyFaithCenter.png"
+            alt="Picture of Cheney Faith Center"
+            class="portfolio__img"
+          />
+        </a>
+      </div>
+      <br />
+      <a href="#work" class="btn"
+        >Donate Now:
+        <br />
+        And make a difference
+      </a>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="footer footer__row">
+      <div class="footer__back-to-top-icon">
+        <a href="#header">
+          <span>
+            <i class="fa fa-solid fa-arrow-up fa-1x"></i>
+          </span>
+        </a>
+      </div>
+      <div class="footer__column-contact-us">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="footer__column-form">
+        <button class="footer__contact-us-button">Contact Us</button>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
